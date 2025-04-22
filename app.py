@@ -40,6 +40,7 @@ def get_recent_image(geometry):
                   .sort('CLOUDY_PIXEL_PERCENTAGE')
                   .first())
     
+    
     # Clip to the geometry
     clipped_image = collection.clip(geometry)
     
